@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+
+:root
+{
+    --dark-navy: #020c1b;
+    --blue: #041c3a;
+    --light-navy: #02183d;
+    --lightest-navy: #233554;
+    --gray: #808080;
+    --white: #e6f1ff;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 10px;
+    --font-mono: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
+}
+
+.button {
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--lightest-navy);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 15px;
+  font-size: var(--fz-xs);
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.App {
+  
+  overflow: hidden;
+  background-color: black;
   color: white;
+  padding: 0.2rem 2rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 10px;
 }

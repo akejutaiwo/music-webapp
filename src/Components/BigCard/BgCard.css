@@ -1,0 +1,15 @@
+.BgCard{
+    max-width: 250px;
+    position: relative;
+    justify-content: space-between;
+    line-height: 1;
+}
+.BgCard > img {
+    max-width: 230px;
+} 
+p {
+    font: lighter;
+    color: gray;
+    font-size: 15px;
+    max-width: 220px;
+}

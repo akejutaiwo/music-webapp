@@ -1,0 +1,32 @@
+.Card {
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 60px;
+    
+    color: white;
+    line-height: 1.7;
+}
+.Card > img {
+    margin-right: 10px;
+    width: 60px;
+}
+.Card>span {
+    font-weight: bolder;
+}
+
+.play{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    font-weight: lighter;
+    color: gray;
+}
+.play > img {
+    width: 30px;
+    color: white;
+    background-color: gray;
+    /* padding: 1px; */
+}
