@@ -20,6 +20,7 @@ const Content = () => {
       <div className="slide">
         <span>Live Porformance </span>
 
+        {/* swiper */}
         <Swiper
         spaceBetween={30}
         grabCursor={true}
